@@ -5,7 +5,7 @@
 
 ## Running petclinic locally
 ```
-	git clone https://github.com/spring-projects/spring-petclinic.git
+	git clone https://github.com/kgvprasad/petclinicapp.git
 	cd spring-petclinic
 	./mvnw spring-boot:run
 ```
