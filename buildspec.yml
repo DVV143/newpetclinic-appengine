@@ -16,5 +16,8 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
+    - 'target/spring-petclinic-1.5.1.war'
     - 'scripts/init.sh'
     - 'appspec.yml'
+    - 'scripts/restart.sh'
+    - 'scripts/load.sh'
