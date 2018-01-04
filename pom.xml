@@ -75,6 +75,22 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.google.cloud.sql/mysql-socket-factory -->
+    <dependency>
+      <groupId>com.google.cloud.sql</groupId>
+      <artifactId>mysql-socket-factory</artifactId>
+      <version>1.0.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.cloud.tools/appengine-maven-plugin -->
+    <dependency>
+      <groupId>com.google.cloud.tools</groupId>
+      <artifactId>appengine-maven-plugin</artifactId>
+      <version>1.3.0</version>
+    </dependency>
+
+
+    
 
     <!-- Databases - Uses HSQL by default -->
     <dependency>
@@ -148,6 +164,11 @@
 
   <build>
     <plugins>
+    <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>appengine-maven-plugin</artifactId>
+        <version>1.3.0</version>
+      </plugin>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -239,6 +260,7 @@
   </build>
   <reporting>
     <plugins>
+      
       <!-- integrate maven-cobertura-plugin to project site -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
