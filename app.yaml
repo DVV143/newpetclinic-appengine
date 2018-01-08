@@ -1,5 +1,8 @@
 runtime: java
-env: standard
+env: flex
 
 resources:
   memory_gb: 2.3
+handlers:
+  - url: /.*  
+
